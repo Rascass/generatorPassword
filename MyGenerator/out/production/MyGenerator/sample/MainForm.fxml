@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<VBox prefHeight="542.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <ImageView fitHeight="542.0" fitWidth="647.0">
+               <image>
+                  <Image url="@../sample/back2.jpg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="passwordTextArea" layoutX="32.0" layoutY="444.0" opacity="0.9" prefHeight="68.0" prefWidth="576.0" promptText="Пароль">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+                 <TextField fx:id="lengthTextField" layoutX="308.0" layoutY="277.0" prefHeight="27.0" prefWidth="102.0" />
+            <CheckBox fx:id="numbCheckBox" layoutX="69.0" layoutY="160.0" mnemonicParsing="false" text="Цифры" textFill="#eeebeb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <ChoiceBox fx:id="langChoiceBox" layoutX="126.0" layoutY="276.0" prefHeight="27.0" prefWidth="102.0" />
+            <Button fx:id="generateButton" layoutX="226.0" layoutY="372.0" mnemonicParsing="false" style="-fx-background-color: E0CFB1;" text="Сгенерировать">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="symbCheckBox" layoutX="69.0" layoutY="188.0" mnemonicParsing="false" text="Символы" textFill="#eeebeb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="charLCheckBox" layoutX="69.0" layoutY="217.0" mnemonicParsing="false" text="Прописные буквы" textFill="#eeebeb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="charUCheckBox" layoutX="69.0" layoutY="243.0" mnemonicParsing="false" text="Строчные буквы" textFill="#eeebeb">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="250.0" layoutY="281.0" text="Длина" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="280.0" prefHeight="18.0" prefWidth="51.0" text="Язык" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="151.0" layoutY="65.0" prefHeight="42.0" prefWidth="345.0" text="Генератор паролей" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="496.0" layoutY="64.0">
+               <image>
+                  <Image url="@../sample/icons8-пароль-96.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
